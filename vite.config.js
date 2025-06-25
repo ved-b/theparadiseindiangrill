@@ -8,4 +8,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: true, // This makes the server accessible from your local machine.
+    port: 5173, // Explicitly set the port.
+    watch: {
+      usePolling: true, // This helps file change detection work reliably inside Docker.
+    },
+  },
 })
