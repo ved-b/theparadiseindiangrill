@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import React from 'react'
+import './index.css' // Make sure this points to your main CSS file
+
+import Header from './components/Header'
+import ScrollingHero from './components/ScrollingHero'
+import Menu from './components/Menu'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <h1 class="text-3xl font-bold underline">Hello World!</h1>
-      </div>
+      <Header />
+      <main>
+        <ScrollingHero />
+        <div className="bg-primary">
+          <Menu />
+        </div>
+      </main>
+      <Footer />
     </>
   )
 }

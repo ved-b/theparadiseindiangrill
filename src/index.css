@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* All your custom theme configuration goes here */
+@theme {
+  --color-primary: #1A1A1A;     /* A very dark gray, almost black */
+  --color-secondary: #F5F5F5;   /* A clean off-white */
+  --color-accent: #E87A00;      /* The warm saffron/turmeric orange */
+
+  --font-sans: 'Lato', 'sans-serif';
+  --font-serif: 'Rozha One', 'serif';
+}
+
+/* You can still add your own base styles below */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-primary text-secondary;
+}
