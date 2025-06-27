@@ -23,7 +23,7 @@ function ScrollingHero() {
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: `url('public/indian-hero.jpg')`,
+            backgroundImage: `url('/indian-hero.jpg')`,
             filter: imageBrightness 
           }}
         />
